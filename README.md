@@ -1,4 +1,6 @@
-## ui-imageLoader
+## ui-imageloader
+
+Image loader Component
 
 ## Install Requirements
 
@@ -14,3 +16,11 @@ npm i
 ```
 grunt
 ``` 
+
+
+## Example
+```
+var aryImgElts = document.querySelectorAll('.project__image');
+var imgLoader = new Imageloader(aryImgElts);
+imgLoader.load();
+```
