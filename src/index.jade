@@ -1,0 +1,29 @@
+doctype html
+html
+  head
+      meta(charset="utf-8")
+      title ui-imageLoader
+      meta(
+        name="viewport"
+        content="width=device-width, initial-scale=1"
+      )
+
+      link(
+        rel="stylesheet"
+        type="text/css"
+        href="/css/main.css"
+      )
+  body
+    .wrapper
+      - var i = 1
+      while i < 10
+        .project
+          img.project__image(
+            src="/imgs/blank.gif"
+            alt=""
+            data-src="/imgs/" + i++ + ".jpg"
+          )
+      
+
+    script(src="/js/ImageLoader.js")  
+    script(src="/js/app.js")  
